@@ -162,9 +162,7 @@ Customer Lifetime Value Increase +$450 Per Customer
 - Add A/B testing framework for retention strategies
 - Deep learning approach (Neural Networks)
 
-# Author
-Barkha Rani
-LinkedIn : www.linkedin.com/in/barkha-rani-70468a303
+
 
 
 
