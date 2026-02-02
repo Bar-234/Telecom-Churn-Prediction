@@ -85,7 +85,7 @@ telecom-churn-prediction/
 **5. Senior Citizens Need Targeted Support**
 - **Senior Citizens** : 41% churn rate
 - **Non-seniors** : 24% churn rate
--**Recommendation** : Create dedicated senior support Program
+- **Recommendation** : Create dedicated senior support Program
 
 # Model Performance
 
