@@ -80,7 +80,7 @@ telecom-churn-prediction/
 **4. Service Adoption Reduce Churn**
 - Tech Support reduce by 23%
 - Multiple Services reduce churn by 31%
--**Recommendation** : Bundle Services with first-year discounts
+- **Recommendation** : Bundle Services with first-year discounts
 
 **5. Senior Citizens Need Targeted Support**
 - **Senior Citizens** : 41% churn rate
