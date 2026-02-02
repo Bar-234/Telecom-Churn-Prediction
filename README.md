@@ -62,29 +62,29 @@ telecom-churn-prediction/
 
 # Key Findings & Insights
 
-*1.Contract Type is the Strongest Predictor*
+**1.Contract Type is the Strongest Predictor**
 - **Month-to-month** : 42% churn rate
 - **One Year** : 11% churn rate
 - **Two year** : 3% Churn rate
 - **Recommendation** : Incentivize long-term contracts with 15-20% discounts
 
-*2. New Customers are High Risk*
+**2. New Customers are High Risk**
 - Customers with <12 months tenure: 47% churn rate
 - **Recommendation** : Implement Enhanced Onboarding program
 
-*3. Payment Method Matters*
+**3. Payment Method Matters**
 - Electronic Check Users : 45% Churn rate
 - Auto-pay users : 16% Churn rate
 - **Recommendation**: offer 5% discount for auto-pay enrollment
 
-*4. Service Adoption Reduce Churn*
--Tech Support reduce by 23%
--Multiple Services reduce churn by 31%
+**4. Service Adoption Reduce Churn**
+- Tech Support reduce by 23%
+- Multiple Services reduce churn by 31%
 -**Recommendation** : Bundle Services with first-year discounts
 
-*5. Senior Citizens Need Targeted Support*
--Senior Citizens: 41% churn rate
--Non-seniors: 24% churn rate
+**5. Senior Citizens Need Targeted Support**
+- **Senior Citizens** : 41% churn rate
+- **Non-seniors** : 24% churn rate
 -**Recommendation** : Create dedicated senior support Program
 
 # Model Performance
