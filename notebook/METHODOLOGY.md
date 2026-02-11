@@ -3,7 +3,6 @@
 # Technical Documentation
 
 # step 1 : Data Loading & Validation
-``` python
 
 # Load data
 - df=  pd.read_csv( r'C:\Users\Sony\Desktop\Telecom Customers Churn.csv')
