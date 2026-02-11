@@ -151,7 +151,7 @@ Cons:
 
 - rf_model = RandomForestClassifier(n_estimators=100, random_state=42, max_depth=10)
 
-** XGBoost (Advanced Ensemble)**
+**XGBoost (Advanced Ensemble)**
 
 pros:
 - State-of-the art performance
@@ -225,20 +225,20 @@ Logistic Regression Selected as final model based on
  
 **Features Importance**
 
-- InternetService_Fiber optic    0.798604 (Fibre customers Churn more(pricing)?)
-- Contract_Two year    0.685091 (Two-year contracts Strongly predict retention)
-- tenure    0.521938 (Longer tenure= Lower churn risk)
-- CustomerValueScore    0.395729 (Engineered feature-revenue Impact)
-- TotalCharges    0.384485 (Higher Total Spend= More invested)
-- PaperlessBilling    0.206344 (Paperless billing slightly increases Churn)
-- PaymentMethod_Electronic check    0.154935 (Electronic check predicts Churn )
-- MonthlyCharges    0.146099 (Mixed effect- High Charges can drive Churn)
-- TechSupport_Yes  0.046  (Tech Support reduce churn)
-- onlineSecurity_Yes 0.041 (Online security reduces Churn)
-- Services Count 0.039 (Engineered feature engagement)
-- SeniorCitizen 0.034 (Seniors Churn more)
-- IsNewCustomer 0.031 (Engineered feature-Vulnerability)
-- onlineBackup_yes 0.025 (Online backup reduce churn)
+- InternetService_Fiber optic  = 0.798604 (Fibre customers Churn more(pricing)?)
+- Contract_Two year =   0.685091 (Two-year contracts Strongly predict retention)
+- tenure  =  0.521938 (Longer tenure= Lower churn risk)
+- CustomerValueScore =   0.395729 (Engineered feature-revenue Impact)
+- TotalCharges =   0.384485 (Higher Total Spend= More invested)
+- PaperlessBilling  =  0.206344 (Paperless billing slightly increases Churn)
+- PaymentMethod_Electronic check  =  0.154935 (Electronic check predicts Churn )
+- MonthlyCharges =   0.146099 (Mixed effect- High Charges can drive Churn)
+- TechSupport_Yes = 0.046  (Tech Support reduce churn)
+- onlineSecurity_Yes = 0.041 (Online security reduces Churn)
+- Services Count = 0.039 (Engineered feature engagement)
+- SeniorCitizen = 0.034 (Seniors Churn more)
+- IsNewCustomer = 0.031 (Engineered feature-Vulnerability)
+- onlineBackup_yes = 0.025 (Online backup reduce churn)
 
 # Key Insights
 - Contract type dominates predictions (31.2% combined importance)
