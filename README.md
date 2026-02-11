@@ -113,9 +113,9 @@ potential Annual Savings:  $2,340,000
  |-Retention campaign Costs: -$380,000
  |-Missed Opportunities: -$800,000
 
-ROI of Retention Campaigns : 4.2x
-Projected Churn Reduction  15-20%
-Customer Lifetime Value Increase +$450 Per Customer
+- ROI of Retention Campaigns : 4.2x
+- Projected Churn Reduction  15-20%
+- Customer Lifetime Value Increase +$450 Per Customer
 
 ### Customer Segmentation
 - **High Risk**  (554 Customers) : >70% Churn probability - immediate action
