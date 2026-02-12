@@ -31,8 +31,8 @@ telecom-churn-prediction/
 
 # Dataset Overview
 
-**Source** : [Kaggle - Telecom Customer Churn ]
-**Size** : 7,043 Customers * 21 features
+- **Source** : [Kaggle - Telecom Customer Churn ]
+- **Size** : 7,043 Customers * 21 features
 
 **Key Features** :
 - **Demographics** : Gender, Senior Citizen, Partner, Dependents
