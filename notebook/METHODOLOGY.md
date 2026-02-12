@@ -26,16 +26,12 @@
 
 ##Categorical Features(One-Hot Encoding)
 
-- nominal_cols= ['MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup',
-- 'DeviceProtection', 'TechSupport','StreamingTV', 'StreamingMovies', 
-- 'Contract','PaymentMethod']
-
+- nominal_cols= ['MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup','DeviceProtection', 'TechSupport','StreamingTV', 'StreamingMovies','Contract','PaymentMethod']
 - df_model = pd.get_dummies(df_model, columns= nominal_cols, drop_first= True)
 
-Rationale: Drop first dummy to avoid multicollinearity ,standard practice for linear models
+**Rationale**: Drop first dummy to avoid multicollinearity ,standard practice for linear models
 
 #Target Variable
-
 - df_model['Churn'] = df_model['Churn'].map({'Yes':1, 'No':0})
 
 # Step 4: Train-Test Split
@@ -43,11 +39,10 @@ Rationale: Drop first dummy to avoid multicollinearity ,standard practice for li
 - X = pd.get_dummies(X, drop_first=True)
 - X_train, X_test, y_train, y_test = train_test_split (X, y, test_size=0.3, random_state=42, stratify=y)
 
-- Split Ratio : 70% Train/30% test
-- stratification : Ensure both set have 26.5% churn rate
+- **Split Ratio** : 70% Train/30% test
+- **stratification** : Ensure both set have 26.5% churn rate
 
 # Step 5: Feature Scaling
-
 - scaler = StandardScaler()
 - X_train_scaled = scaler.fit_transform(X_train)
 - X_test_scaled = scaler.transform(X_test)
@@ -74,8 +69,7 @@ Rationale: Drop first dummy to avoid multicollinearity ,standard practice for li
 - **Interpretation** : Service adoption/ engagement level
 - **Business Value** : Higher count correlates with lower churn(ecosystem lock in effect)
 
-- service_cols= ['PhoneService', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',
-- 'TechSupport','StreamingTV','StreamingMovies']
+- service_cols= ['PhoneService', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection','TechSupport','StreamingTV','StreamingMovies']
 - df_model['ServiceCount'] = (df_model[service_cols]== 'Yes').sum(axis=1)
 
 **AvgMonthlyValue**
@@ -108,9 +102,7 @@ Rationale: Drop first dummy to avoid multicollinearity ,standard practice for li
 - **Bins** : [(0-12),(12-24),(24-48),(48-72)] months
 - **Business Value** : Enable lifecycle-specific retention strategies
 
-- df_model['TenureCatrgory'] = pd.cut(df_model['tenure'], 
-- bins= [0,12, 24, 48,72],
-- labels=['New','Establishing','Mature','Loyal'])
+- df_model['TenureCatrgory'] = pd.cut(df_model['tenure'], bins= [0,12, 24, 48,72],labels=['New','Establishing','Mature','Loyal'])
 
 # Feature Engineering Impact
 - Before: 20 features
