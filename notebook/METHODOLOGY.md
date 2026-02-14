@@ -14,24 +14,24 @@
 
 # Step 3 : Feature Encoding
 
-##Binary Features(Yes/No-1/0)
+Binary Features(Yes/No-1/0)
 
 - binary_cols = ['Partner', 'Dependents', 'PhoneService', 'PaperlessBilling']
 for col in binary_cols:
 df_model[col] = df_model[col].map({'Yes': 1, 'No' :0})  
 
-##Gender (Male/Female-1/0)
+Gender (Male/Female-1/0)
 
 - df_model['gender'] = df_model['gender'].map({'Male':1, 'Female':0})  
 
-##Categorical Features(One-Hot Encoding)
+Categorical Features(One-Hot Encoding)
 
 - nominal_cols= ['MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup','DeviceProtection', 'TechSupport','StreamingTV', 'StreamingMovies','Contract','PaymentMethod']
 df_model = pd.get_dummies(df_model, columns= nominal_cols, drop_first= True)
 
 **Rationale**: Drop first dummy to avoid multicollinearity ,standard practice for linear models
 
-#Target Variable
+Target Variable
 - df_model['Churn'] = df_model['Churn'].map({'Yes':1, 'No':0})
 
 # Step 4: Train-Test Split
